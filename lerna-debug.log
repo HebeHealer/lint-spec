@@ -1,0 +1,36 @@
+45 error Error: Command failed with exit code 1: npm install --package-lock-only --ignore-scripts
+45 error npm ERR! code ERESOLVE
+45 error npm ERR! ERESOLVE could not resolve
+45 error npm ERR!
+45 error npm ERR! While resolving: lint-spec@undefined
+45 error npm ERR! Found: typescript@5.3.3
+45 error npm ERR! node_modules/typescript
+45 error npm ERR!   dev typescript@"^5.0.4" from the root project
+45 error npm ERR!   typescript@"^4.6.4 || ^5.2.2" from @commitlint/load@17.8.1
+45 error npm ERR!   node_modules/@commitlint/load
+45 error npm ERR!     @commitlint/load@"^17.8.1" from @commitlint/cli@17.8.1
+45 error npm ERR!     node_modules/@commitlint/cli
+45 error npm ERR!       dev @commitlint/cli@"^17.6.1" from the root project
+45 error npm ERR!   3 more (cosmiconfig, cosmiconfig-typescript-loader, ts-node)
+45 error npm ERR!
+45 error npm ERR! Could not resolve dependency:
+45 error npm ERR! dev typedoc@"^0.24.7" from the root project
+45 error npm ERR!
+45 error npm ERR! Conflicting peer dependency: typescript@5.1.6
+45 error npm ERR! node_modules/typescript
+45 error npm ERR!   peer typescript@"4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x || 5.1.x" from typedoc@0.24.8
+45 error npm ERR!   node_modules/typedoc
+45 error npm ERR!     dev typedoc@"^0.24.7" from the root project
+45 error npm ERR!
+45 error npm ERR! Fix the upstream dependency conflict, or retry
+45 error npm ERR! this command with --force, or --legacy-peer-deps
+45 error npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+45 error npm ERR!
+45 error npm ERR! See /Users/jenny/.npm/eresolve-report.txt for a full report.
+45 error
+45 error npm ERR! A complete log of this run can be found in:
+45 error npm ERR!     /Users/jenny/.npm/_logs/2024-01-17T20_38_20_010Z-debug-0.log
+45 error     at makeError (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
+45 error     at handlePromise (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
+45 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+45 error     at async Promise.all (index 0)
