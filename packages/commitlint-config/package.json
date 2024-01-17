@@ -1,0 +1,9 @@
+{
+  "name": "commitlint-config",
+  "version": "1.0.8",
+  "main": "index.js",
+  "description": "Git规范",
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.5.0"
+  }
+}

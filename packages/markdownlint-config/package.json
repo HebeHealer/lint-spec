@@ -1,0 +1,13 @@
+{
+  "name": "markdownlint-config",
+  "version": "1.0.0",
+  "main": "index.json",
+  "description": "文档规范",
+  "keywords": [
+    "markdown",
+    "lint"
+  ],
+  "peerDependencies": {
+    "markdownlint": "^0.28.1"
+  }
+}
