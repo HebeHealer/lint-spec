@@ -106,7 +106,6 @@ pnpm run lint
 ```
 
 发布前使用npm login --registry https://registry.npmjs.org 登陆
-
 自动构建站点 git action
 
 vuepress 支持node 16 | 从github上配置workflow
