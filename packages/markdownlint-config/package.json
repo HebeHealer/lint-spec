@@ -1,5 +1,5 @@
 {
-  "name": "@tools/markdownlint-config",
+  "name": "en-markdownlint-config",
   "version": "1.0.2",
   "main": "index.json",
   "description": "文档规范",
@@ -10,5 +10,5 @@
   "peerDependencies": {
     "markdownlint": "^0.28.1"
   },
-  "gitHead": "ef1ae15c66495040e83305a33a3fa87ddc66598d"
+  "gitHead": "fdb78c33e764f60fbcb824185f45038bfbe3abd2"
 }
