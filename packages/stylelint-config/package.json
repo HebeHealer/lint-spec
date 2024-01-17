@@ -1,6 +1,6 @@
 {
-  "name": "en-stylelint-config",
-  "version": "1.0.9",
+  "name": "ens-stylelint-config",
+  "version": "1.0.4",
   "description": " CSS规范",
   "main": "index.js",
   "keywords": [
