@@ -1,36 +1,179 @@
-45 error Error: Command failed with exit code 1: npm install --package-lock-only --ignore-scripts
-45 error npm ERR! code ERESOLVE
-45 error npm ERR! ERESOLVE could not resolve
-45 error npm ERR!
-45 error npm ERR! While resolving: lint-spec@undefined
-45 error npm ERR! Found: typescript@5.3.3
-45 error npm ERR! node_modules/typescript
-45 error npm ERR!   dev typescript@"^5.0.4" from the root project
-45 error npm ERR!   typescript@"^4.6.4 || ^5.2.2" from @commitlint/load@17.8.1
-45 error npm ERR!   node_modules/@commitlint/load
-45 error npm ERR!     @commitlint/load@"^17.8.1" from @commitlint/cli@17.8.1
-45 error npm ERR!     node_modules/@commitlint/cli
-45 error npm ERR!       dev @commitlint/cli@"^17.6.1" from the root project
-45 error npm ERR!   3 more (cosmiconfig, cosmiconfig-typescript-loader, ts-node)
-45 error npm ERR!
-45 error npm ERR! Could not resolve dependency:
-45 error npm ERR! dev typedoc@"^0.24.7" from the root project
-45 error npm ERR!
-45 error npm ERR! Conflicting peer dependency: typescript@5.1.6
-45 error npm ERR! node_modules/typescript
-45 error npm ERR!   peer typescript@"4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x || 5.1.x" from typedoc@0.24.8
-45 error npm ERR!   node_modules/typedoc
-45 error npm ERR!     dev typedoc@"^0.24.7" from the root project
-45 error npm ERR!
-45 error npm ERR! Fix the upstream dependency conflict, or retry
-45 error npm ERR! this command with --force, or --legacy-peer-deps
-45 error npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
-45 error npm ERR!
-45 error npm ERR! See /Users/jenny/.npm/eresolve-report.txt for a full report.
-45 error
-45 error npm ERR! A complete log of this run can be found in:
-45 error npm ERR!     /Users/jenny/.npm/_logs/2024-01-17T20_38_20_010Z-debug-0.log
-45 error     at makeError (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
-45 error     at handlePromise (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
-45 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-45 error     at async Promise.all (index 0)
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '6.6.2',
+0 silly argv   '$0': 'node_modules/lerna/dist/cli.js'
+0 silly argv }
+1 notice cli v6.6.2
+2 verbose rootPath /Users/jenny/Documents/project/app/lint-spec
+3 verbose packageConfigs Package manager 'pnpm' detected. Resolving packages using 'pnpm-workspace.yaml'.
+4 verbose session a84682d927a0a3fd
+5 verbose user-agent lerna/6.6.2/node@v16.20.2+arm64 (darwin)
+6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '6.6.2' }
+7 verbose rootPath /Users/jenny/Documents/project/app/lint-spec
+8 verbose packageConfigs Package manager 'pnpm' detected. Resolving packages using 'pnpm-workspace.yaml'.
+9 info current version 1.0.11
+10 silly isAnythingCommitted
+11 verbose isAnythingCommitted 1
+12 silly getCurrentBranch
+13 verbose currentBranch main
+14 silly remoteBranchExists
+15 silly isBehindUpstream
+16 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 1
+17 silly hasTags
+18 verbose hasTags true
+19 silly git-describe.sync "v1.0.11-1-ga93b150" => {"lastTagName":"v1.0.11","lastVersion":"v1.0.11","refCount":"1","sha":"a93b150","isDirty":false}
+20 info Looking for changed packages since v1.0.11
+21 silly checking diff packages/commitlint-config
+22 silly found diff in packages/commitlint-config/README.md
+23 verbose filtered diff [ 'packages/commitlint-config/README.md' ]
+24 silly checking diff packages/eslint-config
+25 silly no diff found in en-eslint-config
+26 silly checking diff packages/eslint-plugin
+27 silly found diff in packages/eslint-plugin/README.md
+27 silly found diff in packages/eslint-plugin/configs/recommended.js
+27 silly found diff in packages/eslint-plugin/package.json
+27 silly found diff in packages/eslint-plugin/test/rules/no-broad-semantic-versioning.test.js
+28 verbose filtered diff [
+28 verbose filtered diff   'packages/eslint-plugin/README.md',
+28 verbose filtered diff   'packages/eslint-plugin/configs/recommended.js',
+28 verbose filtered diff   'packages/eslint-plugin/package.json',
+28 verbose filtered diff   'packages/eslint-plugin/test/rules/no-broad-semantic-versioning.test.js'
+28 verbose filtered diff ]
+29 silly checking diff packages/lint-cli
+30 silly found diff in packages/lint-cli/README.md
+30 silly found diff in packages/lint-cli/package.json
+30 silly found diff in packages/lint-cli/src/lints/markdownlint/getMarkdownlintConfig.ts
+31 verbose filtered diff [
+31 verbose filtered diff   'packages/lint-cli/README.md',
+31 verbose filtered diff   'packages/lint-cli/package.json',
+31 verbose filtered diff   'packages/lint-cli/src/lints/markdownlint/getMarkdownlintConfig.ts'
+31 verbose filtered diff ]
+32 silly checking diff packages/markdownlint-config
+33 silly no diff found in en-markdownlint-config
+34 silly checking diff packages/stylelint-config
+35 silly found diff in packages/stylelint-config/README.md
+36 verbose filtered diff [ 'packages/stylelint-config/README.md' ]
+37 verbose updated en-commitlint-config
+38 verbose updated en-eslint-plugin
+39 verbose updated lint-cli
+40 verbose updated en-stylelint-config
+41 verbose git-describe undefined => "v1.0.11-1-ga93b150"
+42 silly git-describe parsed => {"lastTagName":"v1.0.11","lastVersion":"v1.0.11","refCount":"1","sha":"a93b150","isDirty":false}
+43 info execute Skipping releases
+44 silly lifecycle No script for "preversion" in "lint-spec", continuing
+45 silly lifecycle No script for "preversion" in "en-commitlint-config", continuing
+46 silly lifecycle No script for "preversion" in "en-eslint-plugin", continuing
+47 silly lifecycle No script for "preversion" in "lint-cli", continuing
+48 silly lifecycle No script for "preversion" in "en-stylelint-config", continuing
+49 verbose version en-commitlint-config has no lockfile. Skipping lockfile update.
+50 verbose version en-eslint-plugin has no lockfile. Skipping lockfile update.
+51 verbose version lint-cli has no lockfile. Skipping lockfile update.
+52 verbose version en-stylelint-config has no lockfile. Skipping lockfile update.
+53 silly lifecycle No script for "version" in "en-eslint-plugin", continuing
+54 silly lifecycle No script for "version" in "en-commitlint-config", continuing
+55 silly lifecycle No script for "version" in "lint-cli", continuing
+56 silly lifecycle No script for "version" in "en-stylelint-config", continuing
+57 verbose version Updating root package-lock.json
+58 silly lifecycle No script for "version" in "lint-spec", continuing
+59 silly gitAdd [
+59 silly gitAdd   'packages/eslint-plugin/package.json',
+59 silly gitAdd   'packages/commitlint-config/package.json',
+59 silly gitAdd   'packages/lint-cli/package.json',
+59 silly gitAdd   'packages/stylelint-config/package.json',
+59 silly gitAdd   'lerna.json',
+59 silly gitAdd   'package-lock.json'
+59 silly gitAdd ]
+60 silly gitCommit chore(release): publish v1.0.12
+61 verbose git [ 'commit', '-m', 'chore(release): publish v1.0.12' ]
+62 silly gitTag v1.0.12 git tag %s -m %s
+63 verbose git [ 'tag', 'v1.0.12', '-m', 'v1.0.12' ]
+64 silly lifecycle No script for "postversion" in "en-commitlint-config", continuing
+65 silly lifecycle No script for "postversion" in "en-eslint-plugin", continuing
+66 silly lifecycle No script for "postversion" in "lint-cli", continuing
+67 silly lifecycle No script for "postversion" in "en-stylelint-config", continuing
+68 silly lifecycle No script for "postversion" in "lint-spec", continuing
+69 info git Pushing tags...
+70 silly gitPush origin main
+71 info publish Publishing packages to npm...
+72 notice Skipping all user and access validation due to third-party registry
+73 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+74 warn ENOLICENSE Packages en-commitlint-config, en-eslint-plugin, lint-cli, and en-stylelint-config are missing a license.
+74 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+74 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+75 silly getCurrentSHA
+76 verbose getCurrentSHA 9320f0272ade5e7c69236610287c779b159496c1
+77 warn lifecycle Skipping root "prepublish" because it has already been called
+78 silly lifecycle "prepare" starting in "lint-spec"
+79 info lifecycle lint-spec@undefined~prepare: lint-spec@undefined
+80 silly lifecycle "prepare" finished in "lint-spec"
+81 silly lifecycle No script for "prepublishOnly" in "lint-spec", continuing
+82 silly lifecycle No script for "prepack" in "lint-spec", continuing
+83 verbose pack-directory packages/commitlint-config
+84 verbose pack-directory packages/eslint-plugin
+85 verbose pack-directory packages/lint-cli
+86 verbose pack-directory packages/stylelint-config
+87 silly lifecycle No script for "prepublish" in "en-commitlint-config", continuing
+88 silly lifecycle No script for "prepublish" in "en-eslint-plugin", continuing
+89 silly lifecycle No script for "prepublish" in "lint-cli", continuing
+90 silly lifecycle No script for "prepublish" in "en-stylelint-config", continuing
+91 silly lifecycle No script for "prepare" in "en-commitlint-config", continuing
+92 silly lifecycle No script for "prepare" in "en-eslint-plugin", continuing
+93 silly lifecycle No script for "prepare" in "lint-cli", continuing
+94 silly lifecycle No script for "prepare" in "en-stylelint-config", continuing
+95 silly lifecycle "prepublishOnly" starting in "en-eslint-plugin"
+96 info lifecycle en-eslint-plugin@1.0.12~prepublishOnly: en-eslint-plugin@1.0.12
+97 silly lifecycle No script for "prepublishOnly" in "en-stylelint-config", continuing
+98 silly lifecycle No script for "prepublishOnly" in "en-commitlint-config", continuing
+99 silly lifecycle "prepublishOnly" starting in "lint-cli"
+100 info lifecycle lint-cli@1.0.12~prepublishOnly: lint-cli@1.0.12
+101 silly lifecycle No script for "prepack" in "en-stylelint-config", continuing
+102 silly lifecycle No script for "prepack" in "en-commitlint-config", continuing
+103 silly lifecycle No script for "postpack" in "en-commitlint-config", continuing
+104 verbose packed packages/commitlint-config
+105 silly lifecycle No script for "postpack" in "en-stylelint-config", continuing
+106 verbose packed packages/stylelint-config
+107 silly lifecycle "prepublishOnly" finished in "en-eslint-plugin"
+108 silly lifecycle No script for "prepack" in "en-eslint-plugin", continuing
+109 silly lifecycle No script for "postpack" in "en-eslint-plugin", continuing
+110 verbose packed packages/eslint-plugin
+111 silly lifecycle "prepublishOnly" finished in "lint-cli"
+112 silly lifecycle No script for "prepack" in "lint-cli", continuing
+113 silly lifecycle No script for "postpack" in "lint-cli", continuing
+114 verbose packed packages/lint-cli
+115 silly lifecycle No script for "postpack" in "lint-spec", continuing
+116 verbose publish en-commitlint-config
+117 verbose publish en-eslint-plugin
+118 verbose publish lint-cli
+119 verbose publish en-stylelint-config
+120 silly FetchError: request to https://registry.npmjs.org/lint-cli failed, reason: connect ETIMEDOUT 104.16.27.34:443
+120 silly     at ClientRequest.<anonymous> (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/minipass-fetch@3.0.4/node_modules/minipass-fetch/lib/index.js:130:14)
+120 silly     at ClientRequest.emit (node:events:513:28)
+120 silly     at TLSSocket.socketErrorListener (node:_http_client:494:9)
+120 silly     at TLSSocket.emit (node:events:525:35)
+120 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+120 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+120 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+120 silly  FetchError: request to https://registry.npmjs.org/lint-cli failed, reason: connect ETIMEDOUT 104.16.27.34:443
+120 silly     at ClientRequest.<anonymous> (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/minipass-fetch@3.0.4/node_modules/minipass-fetch/lib/index.js:130:14)
+120 silly     at ClientRequest.emit (node:events:513:28)
+120 silly     at TLSSocket.socketErrorListener (node:_http_client:494:9)
+120 silly     at TLSSocket.emit (node:events:525:35)
+120 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+120 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+120 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+120 silly   code: 'ETIMEDOUT',
+120 silly   errno: 'ETIMEDOUT',
+120 silly   syscall: 'connect',
+120 silly   address: '104.16.27.34',
+120 silly   port: 443,
+120 silly   type: 'system'
+120 silly }
+121 error ETIMEDOUT request to https://registry.npmjs.org/lint-cli failed, reason: connect ETIMEDOUT 104.16.27.34:443
+122 error FetchError: request to https://registry.npmjs.org/lint-cli failed, reason: connect ETIMEDOUT 104.16.27.34:443
+122 error     at ClientRequest.<anonymous> (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/minipass-fetch@3.0.4/node_modules/minipass-fetch/lib/index.js:130:14)
+122 error     at ClientRequest.emit (node:events:513:28)
+122 error     at TLSSocket.socketErrorListener (node:_http_client:494:9)
+122 error     at TLSSocket.emit (node:events:525:35)
+122 error     at emitErrorNT (node:internal/streams/destroy:157:8)
+122 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)

@@ -83,5 +83,6 @@
     "terminal-link": "^2.1.1",
     "text-table": "^0.2.0",
     "vue-eslint-parser": "^7.3.0"
-  }
+  },
+  "gitHead": "9320f0272ade5e7c69236610287c779b159496c1"
 }
