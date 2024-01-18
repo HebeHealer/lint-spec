@@ -1,6 +1,6 @@
 {
   "name": "en-commitlint-config",
-  "version": "1.0.3",
+  "version": "1.0.12",
   "main": "index.js",
   "description": "Git规范",
   "dependencies": {
