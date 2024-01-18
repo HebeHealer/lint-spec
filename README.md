@@ -121,3 +121,15 @@ vuepress 支持node 16 | 从github上配置workflow
 1、husky 代码规范的扫描
 2、fix
 3、完整的流程梳理 如何实现项目优势
+  lint-cli
+  1、husky git commit 针对有问题的内容进行拦截
+  2、fix 一键修复 一键扫描 lint
+  3、Q&A
+
+  支持模板初始化创建 init
+  lint-cli scan 在根目录执行 扫描出来项目关于规范化的问题
+  lint-cli fix
+  lint-cli commit-file-scan git pre-commit
+  lint-cli commit-msg-scan 针对信息进行扫描 commit-msg commitlint
+
+  
