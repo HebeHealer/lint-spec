@@ -1,6 +1,6 @@
 {
   "name": "en-eslint-plugin",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "印客教育自定义eslint插件",
   "scripts": {
     "test": "jest",
