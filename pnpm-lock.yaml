@@ -287,9 +287,6 @@ importers:
       '@types/prettier':
         specifier: ^2.4.4
         version: 2.7.3
-      '@types/stylelint':
-        specifier: ^14.0.0
-        version: 14.0.0
       '@types/text-table':
         specifier: ^0.2.2
         version: 0.2.5
@@ -3651,15 +3648,6 @@ packages:
 
   /@types/stack-utils@2.0.3:
     resolution: {integrity: sha512-9aEbYZ3TbYMznPdcdr3SmIrLXwC/AKZXQeCf9Pgao5CKb8CyHuEX5jzWPTkvregvhRJHcpRO6BFoGW9ycaOkYw==}
-    dev: true
-
-  /@types/stylelint@14.0.0:
-    resolution: {integrity: sha512-0eFbWemetFjcDiBBKne7QJBfdicxdmdJ1qGMye3sDYe7mCh8EfuovjkUTg6zXvYhJcWBhIIQnC6bmFYjpYetgQ==}
-    deprecated: This is a stub types definition. stylelint provides its own type definitions, so you do not need this installed.
-    dependencies:
-      stylelint: 14.16.1
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /@types/tapable@1.0.12:

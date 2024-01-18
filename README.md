@@ -40,7 +40,7 @@
 | ----------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [eslint-config](https://www.npmjs.com/package/eslint-config)             |
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [stylelint-config](https://www.npmjs.com/package/stylelint-config)       |
-| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [commitlint-config](https://www.npmjs.com/package/commitlint-config)     |
+| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [en-commitlint-config](https://www.npmjs.com/package/en-commitlint-config)     |
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [markdownlint-config](https://www.npmjs.com/package/markdownlint-config) |
 | Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [eslint-plugin](https://www.npmjs.com/package/eslint-plugin)             |
 
@@ -128,8 +128,44 @@ vuepress 支持node 16 | 从github上配置workflow
 
   支持模板初始化创建 init
   lint-cli scan 在根目录执行 扫描出来项目关于规范化的问题
-  lint-cli fix
+  lint-cli fix  prettier + lint
   lint-cli commit-file-scan git pre-commit
   lint-cli commit-msg-scan 针对信息进行扫描 commit-msg commitlint
 
-  
+  scan: 不prettier 直接获取所有的报错信息
+  fix: 先prettier 再获取未处理的报错信息
+
+  一键扫描一键修复
+  1、通过注入script  添加git hooks
+    1、pre-commit scan
+    2、commit-msg commitlint
+  2、通过四个lint工具
+    1、获取当前项目的lint config 先读取当前项目已有的配置项 没有使用默认配置
+    2、使用lint 工具，根据options.fix进行是否自动修复
+    3、按照scan result标准化输出
+
+  3、完善了cli的基本能力
+    1、init安装基础包
+    2、scan: scanAction
+    3、fix: scanAction fix配置是否自动修复
+    4、commit-file-scan
+    5、commit-msg-scan
+
+  -main: 整个入口
+  -bin: lint-cli实现脚手架
+  -commitlint
+  -stylelint
+  -eslint
+  -eslint-plugin
+  -commitlint
+  -markdownlint
+
+
+
+1、个人编码能力： 
+   cli node实战 linter规范 ts的使用 静态站点的展示 前端工程化的标准 包含哪些内容
+
+2、面试的前端深度体现： 项目
+
+3、对于前端整体的理解 业务研发->前端架构（for developer）
+  通过工具约束前端开发的张力，保证项目规范的标准化

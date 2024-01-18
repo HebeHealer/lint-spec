@@ -1,8 +1,9 @@
-import path from 'path';
+import type { Config, PKG, ScanOptions } from '../../types';
+
 import glob from 'glob';
 import markdownLint from 'markdownlint';
 import markdownLintConfig from 'markdownlint-config-encode';
-import type { ScanOptions, PKG, Config } from '../../types';
+import path from 'path';
 
 type LintOptions = markdownLint.Options & { fix?: boolean };
 

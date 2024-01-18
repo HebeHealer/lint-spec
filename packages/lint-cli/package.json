@@ -1,7 +1,7 @@
 {
   "name": "lint-cli",
-  "version": "1.0.11",
-  "description": "印客教育前端编码规范工程化标准脚手架",
+  "version": "1.0.9",
+  "description": "前端编码规范工程化标准脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
   "scripts": {
@@ -33,7 +33,6 @@
     "@types/lodash": "^4.14.180",
     "@types/node": "^14.14.11",
     "@types/prettier": "^2.4.4",
-    "@types/stylelint": "^14.0.0",
     "@types/text-table": "^0.2.2",
     "copyfiles": "^2.4.1",
     "jest": "^27.5.1",
@@ -84,16 +83,5 @@
     "terminal-link": "^2.1.1",
     "text-table": "^0.2.0",
     "vue-eslint-parser": "^7.3.0"
-  },
-  "author": "chenghuai",
-  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
-  },
-  "bugs": {
-    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
-  },
-  "gitHead": "9de20dc1714ffa3d2d267f01c1afed0f9e8f1f7b"
+  }
 }

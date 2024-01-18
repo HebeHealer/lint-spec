@@ -1,5 +1,5 @@
 ---
-title: en-commitlint-config
+title: en-en-commitlint-config
 categories:
   - 工程规范
 tags:
@@ -22,7 +22,7 @@ author:
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install en-commitlint-config @commitlint/cli --save-dev
+npm install en-en-commitlint-config @commitlint/cli --save-dev
 ```
 
 ## 使用
