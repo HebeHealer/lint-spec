@@ -49,6 +49,12 @@ importers:
         specifier: ^1.1.7
         version: 1.1.8
 
+  demo:
+    devDependencies:
+      en-lint-cli:
+        specifier: workspace:^
+        version: link:../packages/lint-cli
+
   packages/commitlint-config:
     dependencies:
       conventional-changelog-conventionalcommits:

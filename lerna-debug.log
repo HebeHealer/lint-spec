@@ -7,12 +7,12 @@
 1 notice cli v6.6.2
 2 verbose rootPath /Users/jenny/Documents/project/app/lint-spec
 3 verbose packageConfigs Package manager 'pnpm' detected. Resolving packages using 'pnpm-workspace.yaml'.
-4 verbose session a84682d927a0a3fd
+4 verbose session 553bbeb1918de290
 5 verbose user-agent lerna/6.6.2/node@v16.20.2+arm64 (darwin)
 6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '6.6.2' }
 7 verbose rootPath /Users/jenny/Documents/project/app/lint-spec
 8 verbose packageConfigs Package manager 'pnpm' detected. Resolving packages using 'pnpm-workspace.yaml'.
-9 info current version 1.0.11
+9 info current version 1.0.13
 10 silly isAnythingCommitted
 11 verbose isAnythingCommitted 1
 12 silly getCurrentBranch
@@ -22,75 +22,61 @@
 16 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 1
 17 silly hasTags
 18 verbose hasTags true
-19 silly git-describe.sync "v1.0.11-1-ga93b150" => {"lastTagName":"v1.0.11","lastVersion":"v1.0.11","refCount":"1","sha":"a93b150","isDirty":false}
-20 info Looking for changed packages since v1.0.11
+19 silly git-describe.sync "v1.0.13-1-gebc1b7c" => {"lastTagName":"v1.0.13","lastVersion":"v1.0.13","refCount":"1","sha":"ebc1b7c","isDirty":false}
+20 info Looking for changed packages since v1.0.13
 21 silly checking diff packages/commitlint-config
-22 silly found diff in packages/commitlint-config/README.md
-23 verbose filtered diff [ 'packages/commitlint-config/README.md' ]
+22 silly found diff in packages/commitlint-config/package.json
+23 verbose filtered diff [ 'packages/commitlint-config/package.json' ]
 24 silly checking diff packages/eslint-config
 25 silly no diff found in en-eslint-config
 26 silly checking diff packages/eslint-plugin
-27 silly found diff in packages/eslint-plugin/README.md
-27 silly found diff in packages/eslint-plugin/configs/recommended.js
 27 silly found diff in packages/eslint-plugin/package.json
-27 silly found diff in packages/eslint-plugin/test/rules/no-broad-semantic-versioning.test.js
-28 verbose filtered diff [
-28 verbose filtered diff   'packages/eslint-plugin/README.md',
-28 verbose filtered diff   'packages/eslint-plugin/configs/recommended.js',
-28 verbose filtered diff   'packages/eslint-plugin/package.json',
-28 verbose filtered diff   'packages/eslint-plugin/test/rules/no-broad-semantic-versioning.test.js'
-28 verbose filtered diff ]
+28 verbose filtered diff [ 'packages/eslint-plugin/package.json' ]
 29 silly checking diff packages/lint-cli
-30 silly found diff in packages/lint-cli/README.md
 30 silly found diff in packages/lint-cli/package.json
-30 silly found diff in packages/lint-cli/src/lints/markdownlint/getMarkdownlintConfig.ts
-31 verbose filtered diff [
-31 verbose filtered diff   'packages/lint-cli/README.md',
-31 verbose filtered diff   'packages/lint-cli/package.json',
-31 verbose filtered diff   'packages/lint-cli/src/lints/markdownlint/getMarkdownlintConfig.ts'
-31 verbose filtered diff ]
+31 verbose filtered diff [ 'packages/lint-cli/package.json' ]
 32 silly checking diff packages/markdownlint-config
 33 silly no diff found in en-markdownlint-config
 34 silly checking diff packages/stylelint-config
-35 silly found diff in packages/stylelint-config/README.md
-36 verbose filtered diff [ 'packages/stylelint-config/README.md' ]
+35 silly found diff in packages/stylelint-config/package.json
+36 verbose filtered diff [ 'packages/stylelint-config/package.json' ]
 37 verbose updated en-commitlint-config
 38 verbose updated en-eslint-plugin
-39 verbose updated lint-cli
+39 verbose updated en-lint-cli
 40 verbose updated en-stylelint-config
-41 verbose git-describe undefined => "v1.0.11-1-ga93b150"
-42 silly git-describe parsed => {"lastTagName":"v1.0.11","lastVersion":"v1.0.11","refCount":"1","sha":"a93b150","isDirty":false}
+41 verbose git-describe undefined => "v1.0.13-1-gebc1b7c"
+42 silly git-describe parsed => {"lastTagName":"v1.0.13","lastVersion":"v1.0.13","refCount":"1","sha":"ebc1b7c","isDirty":false}
 43 info execute Skipping releases
 44 silly lifecycle No script for "preversion" in "lint-spec", continuing
 45 silly lifecycle No script for "preversion" in "en-commitlint-config", continuing
 46 silly lifecycle No script for "preversion" in "en-eslint-plugin", continuing
-47 silly lifecycle No script for "preversion" in "lint-cli", continuing
+47 silly lifecycle No script for "preversion" in "en-lint-cli", continuing
 48 silly lifecycle No script for "preversion" in "en-stylelint-config", continuing
-49 verbose version en-commitlint-config has no lockfile. Skipping lockfile update.
-50 verbose version en-eslint-plugin has no lockfile. Skipping lockfile update.
-51 verbose version lint-cli has no lockfile. Skipping lockfile update.
-52 verbose version en-stylelint-config has no lockfile. Skipping lockfile update.
+49 verbose version en-eslint-plugin has no lockfile. Skipping lockfile update.
+50 verbose version en-commitlint-config has no lockfile. Skipping lockfile update.
+51 verbose version en-stylelint-config has no lockfile. Skipping lockfile update.
+52 verbose version en-lint-cli has no lockfile. Skipping lockfile update.
 53 silly lifecycle No script for "version" in "en-eslint-plugin", continuing
-54 silly lifecycle No script for "version" in "en-commitlint-config", continuing
-55 silly lifecycle No script for "version" in "lint-cli", continuing
-56 silly lifecycle No script for "version" in "en-stylelint-config", continuing
+54 silly lifecycle No script for "version" in "en-stylelint-config", continuing
+55 silly lifecycle No script for "version" in "en-commitlint-config", continuing
+56 silly lifecycle No script for "version" in "en-lint-cli", continuing
 57 verbose version Updating root package-lock.json
 58 silly lifecycle No script for "version" in "lint-spec", continuing
 59 silly gitAdd [
 59 silly gitAdd   'packages/eslint-plugin/package.json',
+59 silly gitAdd   'packages/stylelint-config/package.json',
 59 silly gitAdd   'packages/commitlint-config/package.json',
 59 silly gitAdd   'packages/lint-cli/package.json',
-59 silly gitAdd   'packages/stylelint-config/package.json',
 59 silly gitAdd   'lerna.json',
 59 silly gitAdd   'package-lock.json'
 59 silly gitAdd ]
-60 silly gitCommit chore(release): publish v1.0.12
-61 verbose git [ 'commit', '-m', 'chore(release): publish v1.0.12' ]
-62 silly gitTag v1.0.12 git tag %s -m %s
-63 verbose git [ 'tag', 'v1.0.12', '-m', 'v1.0.12' ]
+60 silly gitCommit chore(release): publish v1.0.14
+61 verbose git [ 'commit', '-m', 'chore(release): publish v1.0.14' ]
+62 silly gitTag v1.0.14 git tag %s -m %s
+63 verbose git [ 'tag', 'v1.0.14', '-m', 'v1.0.14' ]
 64 silly lifecycle No script for "postversion" in "en-commitlint-config", continuing
 65 silly lifecycle No script for "postversion" in "en-eslint-plugin", continuing
-66 silly lifecycle No script for "postversion" in "lint-cli", continuing
+66 silly lifecycle No script for "postversion" in "en-lint-cli", continuing
 67 silly lifecycle No script for "postversion" in "en-stylelint-config", continuing
 68 silly lifecycle No script for "postversion" in "lint-spec", continuing
 69 info git Pushing tags...
@@ -98,11 +84,11 @@
 71 info publish Publishing packages to npm...
 72 notice Skipping all user and access validation due to third-party registry
 73 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
-74 warn ENOLICENSE Packages en-commitlint-config, en-eslint-plugin, lint-cli, and en-stylelint-config are missing a license.
+74 warn ENOLICENSE Packages en-commitlint-config, en-eslint-plugin, en-lint-cli, and en-stylelint-config are missing a license.
 74 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
 74 warn ENOLICENSE See https://choosealicense.com for additional guidance.
 75 silly getCurrentSHA
-76 verbose getCurrentSHA 9320f0272ade5e7c69236610287c779b159496c1
+76 verbose getCurrentSHA 53e1e41cae893dd99dae672073b3cb684c76ef03
 77 warn lifecycle Skipping root "prepublish" because it has already been called
 78 silly lifecycle "prepare" starting in "lint-spec"
 79 info lifecycle lint-spec@undefined~prepare: lint-spec@undefined
@@ -115,20 +101,20 @@
 86 verbose pack-directory packages/stylelint-config
 87 silly lifecycle No script for "prepublish" in "en-commitlint-config", continuing
 88 silly lifecycle No script for "prepublish" in "en-eslint-plugin", continuing
-89 silly lifecycle No script for "prepublish" in "lint-cli", continuing
+89 silly lifecycle No script for "prepublish" in "en-lint-cli", continuing
 90 silly lifecycle No script for "prepublish" in "en-stylelint-config", continuing
 91 silly lifecycle No script for "prepare" in "en-commitlint-config", continuing
 92 silly lifecycle No script for "prepare" in "en-eslint-plugin", continuing
-93 silly lifecycle No script for "prepare" in "lint-cli", continuing
+93 silly lifecycle No script for "prepare" in "en-lint-cli", continuing
 94 silly lifecycle No script for "prepare" in "en-stylelint-config", continuing
-95 silly lifecycle "prepublishOnly" starting in "en-eslint-plugin"
-96 info lifecycle en-eslint-plugin@1.0.12~prepublishOnly: en-eslint-plugin@1.0.12
-97 silly lifecycle No script for "prepublishOnly" in "en-stylelint-config", continuing
-98 silly lifecycle No script for "prepublishOnly" in "en-commitlint-config", continuing
-99 silly lifecycle "prepublishOnly" starting in "lint-cli"
-100 info lifecycle lint-cli@1.0.12~prepublishOnly: lint-cli@1.0.12
-101 silly lifecycle No script for "prepack" in "en-stylelint-config", continuing
-102 silly lifecycle No script for "prepack" in "en-commitlint-config", continuing
+95 silly lifecycle No script for "prepublishOnly" in "en-commitlint-config", continuing
+96 silly lifecycle "prepublishOnly" starting in "en-eslint-plugin"
+97 info lifecycle en-eslint-plugin@1.0.14~prepublishOnly: en-eslint-plugin@1.0.14
+98 silly lifecycle "prepublishOnly" starting in "en-lint-cli"
+99 info lifecycle en-lint-cli@1.0.14~prepublishOnly: en-lint-cli@1.0.14
+100 silly lifecycle No script for "prepublishOnly" in "en-stylelint-config", continuing
+101 silly lifecycle No script for "prepack" in "en-commitlint-config", continuing
+102 silly lifecycle No script for "prepack" in "en-stylelint-config", continuing
 103 silly lifecycle No script for "postpack" in "en-commitlint-config", continuing
 104 verbose packed packages/commitlint-config
 105 silly lifecycle No script for "postpack" in "en-stylelint-config", continuing
@@ -137,43 +123,134 @@
 108 silly lifecycle No script for "prepack" in "en-eslint-plugin", continuing
 109 silly lifecycle No script for "postpack" in "en-eslint-plugin", continuing
 110 verbose packed packages/eslint-plugin
-111 silly lifecycle "prepublishOnly" finished in "lint-cli"
-112 silly lifecycle No script for "prepack" in "lint-cli", continuing
-113 silly lifecycle No script for "postpack" in "lint-cli", continuing
+111 silly lifecycle "prepublishOnly" finished in "en-lint-cli"
+112 silly lifecycle No script for "prepack" in "en-lint-cli", continuing
+113 silly lifecycle No script for "postpack" in "en-lint-cli", continuing
 114 verbose packed packages/lint-cli
 115 silly lifecycle No script for "postpack" in "lint-spec", continuing
 116 verbose publish en-commitlint-config
 117 verbose publish en-eslint-plugin
-118 verbose publish lint-cli
+118 verbose publish en-lint-cli
 119 verbose publish en-stylelint-config
-120 silly FetchError: request to https://registry.npmjs.org/lint-cli failed, reason: connect ETIMEDOUT 104.16.27.34:443
-120 silly     at ClientRequest.<anonymous> (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/minipass-fetch@3.0.4/node_modules/minipass-fetch/lib/index.js:130:14)
-120 silly     at ClientRequest.emit (node:events:513:28)
-120 silly     at TLSSocket.socketErrorListener (node:_http_client:494:9)
-120 silly     at TLSSocket.emit (node:events:525:35)
-120 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
-120 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-120 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
-120 silly  FetchError: request to https://registry.npmjs.org/lint-cli failed, reason: connect ETIMEDOUT 104.16.27.34:443
-120 silly     at ClientRequest.<anonymous> (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/minipass-fetch@3.0.4/node_modules/minipass-fetch/lib/index.js:130:14)
-120 silly     at ClientRequest.emit (node:events:513:28)
-120 silly     at TLSSocket.socketErrorListener (node:_http_client:494:9)
-120 silly     at TLSSocket.emit (node:events:525:35)
-120 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
-120 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-120 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
-120 silly   code: 'ETIMEDOUT',
-120 silly   errno: 'ETIMEDOUT',
-120 silly   syscall: 'connect',
-120 silly   address: '104.16.27.34',
-120 silly   port: 443,
-120 silly   type: 'system'
-120 silly }
-121 error ETIMEDOUT request to https://registry.npmjs.org/lint-cli failed, reason: connect ETIMEDOUT 104.16.27.34:443
-122 error FetchError: request to https://registry.npmjs.org/lint-cli failed, reason: connect ETIMEDOUT 104.16.27.34:443
-122 error     at ClientRequest.<anonymous> (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/minipass-fetch@3.0.4/node_modules/minipass-fetch/lib/index.js:130:14)
-122 error     at ClientRequest.emit (node:events:513:28)
-122 error     at TLSSocket.socketErrorListener (node:_http_client:494:9)
-122 error     at TLSSocket.emit (node:events:525:35)
-122 error     at emitErrorNT (node:internal/streams/destroy:157:8)
-122 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+120 silly lifecycle No script for "publish" in "en-lint-cli", continuing
+121 silly lifecycle No script for "postpublish" in "en-lint-cli", continuing
+122 success published en-lint-cli 1.0.14
+123 notice
+124 notice 📦  en-lint-cli@1.0.14
+125 notice === Tarball Contents ===
+126 notice 208B   lib/config/_editorconfig.ejs
+126 notice 85B    lib/config/_eslintignore.ejs
+126 notice 185B   lib/config/_eslintrc.js.ejs
+126 notice 88B    lib/config/_markdownlint.json.ejs
+126 notice 112B   lib/config/_markdownlintignore.ejs
+126 notice 140B   lib/config/_prettierrc.js.ejs
+126 notice 106B   lib/config/_stylelintignore.ejs
+126 notice 102B   lib/config/_stylelintrc.js.ejs
+126 notice 45B    lib/config/commitlint.config.js.ejs
+126 notice 192B   lib/config/encode-fe-lint.config.js.ejs
+126 notice 124B   lib/config/_vscode/extensions.json.ejs
+126 notice 1.6kB  lib/config/_vscode/settings.json.ejs
+126 notice 12.1kB lib/cli.js
+126 notice 9.5kB  lib/utils/conflict-resolve.js
+126 notice 4.0kB  lib/utils/constants.js
+126 notice 4.6kB  lib/lints/eslint/doESLint.js
+126 notice 6.7kB  lib/lints/markdownlint/doMarkdownlint.js
+126 notice 5.4kB  lib/lints/prettier/doPrettier.js
+126 notice 4.9kB  lib/lints/stylelint/doStylelint.js
+126 notice 1.8kB  lib/lints/eslint/formatESLintResults.js
+126 notice 1.5kB  lib/lints/markdownlint/formatMarkdownlintResults.js
+126 notice 1.5kB  lib/lints/stylelint/formatStylelintResults.js
+126 notice 4.3kB  lib/utils/generate-template.js
+126 notice 2.7kB  lib/lints/eslint/getESLintConfig.js
+126 notice 1.3kB  lib/lints/eslint/getESLintConfigType.js
+126 notice 1.2kB  lib/lints/markdownlint/getMarkdownlintConfig.js
+126 notice 1.4kB  lib/lints/stylelint/getStylelintConfig.js
+126 notice 515B   lib/lints/stylelint/getStylelintDocUrl.js
+126 notice 5.2kB  lib/utils/git.js
+126 notice 4.9kB  ./lib/index.js
+126 notice 4.9kB  lib/index.js
+126 notice 913B   lib/lints/eslint/index.js
+126 notice 944B   lib/lints/index.js
+126 notice 931B   lib/lints/markdownlint/index.js
+126 notice 805B   lib/lints/prettier/index.js
+126 notice 922B   lib/lints/stylelint/index.js
+126 notice 11.7kB lib/actions/init.js
+126 notice 938B   lib/utils/log.js
+126 notice 302B   lib/utils/npm-type.js
+126 notice 4.7kB  lib/utils/print-report.js
+126 notice 7.1kB  lib/actions/scan.js
+126 notice 77B    lib/types.js
+126 notice 6.3kB  lib/actions/update.js
+126 notice 2.6kB  package.json
+126 notice 12.1kB README.md
+126 notice 31B    lib/cli.d.ts
+126 notice 142B   lib/utils/conflict-resolve.d.ts
+126 notice 677B   lib/utils/constants.d.ts
+126 notice 253B   lib/lints/eslint/doESLint.d.ts
+126 notice 271B   lib/lints/markdownlint/doMarkdownlint.d.ts
+126 notice 181B   lib/lints/prettier/doPrettier.d.ts
+126 notice 233B   lib/lints/stylelint/doStylelint.d.ts
+126 notice 201B   lib/lints/eslint/formatESLintResults.d.ts
+126 notice 204B   lib/lints/markdownlint/formatMarkdownlintResults.d.ts
+126 notice 188B   lib/lints/stylelint/formatStylelintResults.d.ts
+126 notice 117B   lib/utils/generate-template.d.ts
+126 notice 196B   lib/lints/eslint/getESLintConfig.d.ts
+126 notice 116B   lib/lints/eslint/getESLintConfigType.d.ts
+126 notice 284B   lib/lints/markdownlint/getMarkdownlintConfig.d.ts
+126 notice 208B   lib/lints/stylelint/getStylelintConfig.d.ts
+126 notice 70B    lib/lints/stylelint/getStylelintDocUrl.d.ts
+126 notice 194B   lib/utils/git.d.ts
+126 notice 290B   lib/index.d.ts
+126 notice 102B   lib/lints/eslint/index.d.ts
+126 notice 115B   lib/lints/index.d.ts
+126 notice 120B   lib/lints/markdownlint/index.d.ts
+126 notice 30B    lib/lints/prettier/index.d.ts
+126 notice 111B   lib/lints/stylelint/index.d.ts
+126 notice 135B   lib/actions/init.d.ts
+126 notice 225B   lib/utils/log.d.ts
+126 notice 72B    lib/utils/npm-type.d.ts
+126 notice 140B   lib/utils/print-report.d.ts
+126 notice 153B   lib/actions/scan.d.ts
+126 notice 2.1kB  lib/types.d.ts
+126 notice 87B    lib/actions/update.d.ts
+127 notice === Tarball Details ===
+128 notice name:          en-lint-cli
+128 notice version:       1.0.14
+128 notice filename:      en-lint-cli-1.0.14.tgz
+128 notice package size:  25.0 kB
+128 notice unpacked size: 138.9 kB
+128 notice shasum:        30256472e020a2730fe3befdf15018dd01c0ac1e
+128 notice integrity:     sha512-ZGQhnpNWtWGo0[...]ZGFxeILFDPU7Q==
+128 notice total files:   75
+129 notice
+130 silly FetchError: request to https://registry.npmjs.org/en-eslint-plugin failed, reason: connect ETIMEDOUT 104.16.1.35:443
+130 silly     at ClientRequest.<anonymous> (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/minipass-fetch@3.0.4/node_modules/minipass-fetch/lib/index.js:130:14)
+130 silly     at ClientRequest.emit (node:events:513:28)
+130 silly     at TLSSocket.socketErrorListener (node:_http_client:494:9)
+130 silly     at TLSSocket.emit (node:events:525:35)
+130 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+130 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+130 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+130 silly  FetchError: request to https://registry.npmjs.org/en-eslint-plugin failed, reason: connect ETIMEDOUT 104.16.1.35:443
+130 silly     at ClientRequest.<anonymous> (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/minipass-fetch@3.0.4/node_modules/minipass-fetch/lib/index.js:130:14)
+130 silly     at ClientRequest.emit (node:events:513:28)
+130 silly     at TLSSocket.socketErrorListener (node:_http_client:494:9)
+130 silly     at TLSSocket.emit (node:events:525:35)
+130 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+130 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+130 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+130 silly   code: 'ETIMEDOUT',
+130 silly   errno: 'ETIMEDOUT',
+130 silly   syscall: 'connect',
+130 silly   address: '104.16.1.35',
+130 silly   port: 443,
+130 silly   type: 'system'
+130 silly }
+131 error ETIMEDOUT request to https://registry.npmjs.org/en-eslint-plugin failed, reason: connect ETIMEDOUT 104.16.1.35:443
+132 error FetchError: request to https://registry.npmjs.org/en-eslint-plugin failed, reason: connect ETIMEDOUT 104.16.1.35:443
+132 error     at ClientRequest.<anonymous> (/Users/jenny/Documents/project/app/lint-spec/node_modules/.pnpm/minipass-fetch@3.0.4/node_modules/minipass-fetch/lib/index.js:130:14)
+132 error     at ClientRequest.emit (node:events:513:28)
+132 error     at TLSSocket.socketErrorListener (node:_http_client:494:9)
+132 error     at TLSSocket.emit (node:events:525:35)
+132 error     at emitErrorNT (node:internal/streams/destroy:157:8)
+132 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)

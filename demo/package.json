@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "en-lint-cli-scan": "en-lint-cli scan",
+    "en-lint-cli-fix": "en-lint-cli fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "en-lint-cli": "workspace:^"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "en-lint-cli commit-file-scan",
+      "commit-msg": "en-lint-cli commit-msg-scan"
+    }
+  }
+}
