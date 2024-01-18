@@ -6,12 +6,12 @@ tags:
   - 脚手架规范
 author:
   name: 澄怀
-  link: https://github.com/hebehealer/fe-spec
+  link: https://github.com/hebehealer/lint-spec
 ---
 
 # lint-cli
 
-`lint-cli` 是[ 前端编码规范工程化](https://hebehealer.github.io/fe-spec/)的配套 Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
+`lint-cli` 是[ 前端编码规范工程化](https://hebehealer.github.io/lint-spec/)的配套 Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
 
 ## 背景
 

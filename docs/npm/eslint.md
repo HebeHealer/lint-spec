@@ -6,7 +6,7 @@ tags:
   - 工程规范
 author:
   name: 澄怀
-  link: https://github.com/hebehealer/fe-spec
+  link: https://github.com/hebehealer/lint-spec
 ---
 
 # en-eslint-config
