@@ -4,7 +4,7 @@ export default defineConfig4CustomTheme({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: '印客学院',
+      title: '',
       description: '前端编码规范工程化',
     },
   },
@@ -33,16 +33,16 @@ export default defineConfig4CustomTheme({
       {
         text: 'NPM包',
         items: [
-          { text: 'eslint-config-encode', link: '/npm/eslint.md' },
-          { text: 'stylelint-config-encode', link: '/npm/stylelint.md' },
-          { text: 'commitlint-config-encode', link: '/npm/commitlint.md' },
-          { text: 'markdownlint-config-encode', link: '/npm/markdownlint.md' },
-          { text: 'eslint-plugin-encode', link: '/npm/eslint-plugin.md' },
+          { text: 'en-eslint-config', link: '/npm/eslint.md' },
+          { text: 'en-stylelint-config', link: '/npm/stylelint.md' },
+          { text: 'en-commitlint-config', link: '/npm/commitlint.md' },
+          { text: 'en-markdownlint-config', link: '/npm/markdownlint.md' },
+          { text: 'en-eslint-plugin', link: '/npm/eslint-plugin.md' },
         ],
       },
       {
         text: '脚手架',
-        items: [{ text: 'encode-fe-lint', link: '/cli/encode-fe-lint.md' }],
+        items: [{ text: 'lint-cli', link: '/cli/lint-cli.md' }],
       },
     ],
     sidebar: [
@@ -91,32 +91,32 @@ export default defineConfig4CustomTheme({
       {
         title: 'NPM包',
         children: [
-          { title: 'eslint-config-encode', path: '/npm/eslint.md' },
-          { title: 'stylelint-config-encode', path: '/npm/stylelint.md' },
-          { title: 'commitlint-config-encode', path: '/npm/commitlint.md' },
-          { title: 'markdownlint-config-encode', path: '/npm/markdownlint.md' },
-          { title: 'eslint-plugin-encode', path: '/npm/eslint-plugin.md' },
+          { title: 'en-eslint-config', path: '/npm/eslint.md' },
+          { title: 'en-stylelint-config', path: '/npm/stylelint.md' },
+          { title: 'en-commitlint-config', path: '/npm/commitlint.md' },
+          { title: 'en-markdownlint-config', path: '/npm/markdownlint.md' },
+          { title: 'en-eslint-plugin', path: '/npm/eslint-plugin.md' },
         ],
       },
       {
         title: '脚手架',
-        children: [{ title: 'encode-fe-lint', path: '/cli/encode-fe-lint.md' }],
+        children: [{ title: 'lint-cli', path: '/cli/lint-cli.md' }],
       },
     ],
-    logo: '/img/logo.png',
-    repo: 'encode-studio-fe/lint-spec',
+    logo: 'https://avatars.githubusercontent.com/u/22335467?v=4',
+    repo: 'hebehealer/lint-spec',
     searchMaxSuggestions: 10,
     docsDir: 'docs',
     footer: {
       createYear: 2023,
       copyrightInfo:
-        'encode studio | <a href="https://github.com/encode-studio-fe/lint-spec" target="_blank">github</a>',
+        'encode studio | <a href="https://github.com/hebehealer/lint-spec" target="_blank">github</a>',
     },
 
     extendFrontmatter: {
       author: {
         name: '澄怀',
-        link: 'https://github.com/encode-studio-fe/fe-sepc',
+        link: 'https://github.com/hebehealer/lint-spec',
       },
     },
   },
