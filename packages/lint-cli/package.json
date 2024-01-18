@@ -1,5 +1,5 @@
 {
-  "name": "lint-cli",
+  "name": "en-lint-cli",
   "version": "1.0.13",
   "description": "前端编码规范工程化标准脚手架",
   "bin": "./lib/cli.js",
@@ -84,5 +84,5 @@
     "text-table": "^0.2.0",
     "vue-eslint-parser": "^7.3.0"
   },
-  "gitHead": "9320f0272ade5e7c69236610287c779b159496c1"
+  "gitHead": "3e0016550a03c7ca4518cb2263acbd423143e37f"
 }
